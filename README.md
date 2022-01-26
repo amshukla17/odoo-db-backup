@@ -18,10 +18,10 @@ Hook it in /etc/crontab for autoback on specified interval. Make sure file has e
 #### File: /etc/crontab
 > m h dom mon dow user	command
 
-`<minute> <hour>   * * *   <user-used-to-run-script>    sh /path/to/this/script/odoo-db-backup.sh "<psql-database-name>" >> /path/to/backups/backup-log-file.log`
+```<minute> <hour>   * * *   <user-used-to-run-script>    sh /path/to/this/script/odoo-db-backup.sh "<psql-database-name>" >> /path/to/backups/backup-log-file.log```
 
 #### Example: Daily 1:15 O'clock odoo-live psql database backup is run and it will make databases backups without filestore as per procedure defined.
-15 1   * * *   root    sh /odoo/backups/odoo-db-backup.sh "odoo-live" >> /odoo/backups/odoo-db-backup-odoo-live.log
+```15 1   * * *   root    sh /odoo/backups/odoo-db-backup.sh "odoo-live" >> /odoo/backups/odoo-db-backup-odoo-live.log```
 
-#### Confirm/change following parameters inside script
+#### Confirm/change following parameters inside the script.
 - DIR="/odoo/backups/$DBNAME"
