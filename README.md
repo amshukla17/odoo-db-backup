@@ -3,7 +3,7 @@
 ## odoo-db-backup
 Collection of Odoo Database Backup Options.
 
-## Odoo Backup Bash Script
+## Odoo Backup Shell Script
 This database backup script is useful when database backup require on the same server without filestore. This is OS based backup script so it works on base level to make sure backup runs as expected without fail.
 
 ### Manage Historical Database Backups
